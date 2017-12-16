@@ -8,6 +8,7 @@
 		"release": "run-s build update-version release:*"
 	},
 	"dependencies": {
+		"file-icons-js": "websemantics/file-icons-js",
 		"jquery": "^3.2.1"
 	},
 	"devDependencies": {
@@ -30,7 +31,8 @@
 		"rules": {
 			"import/no-unassigned-import": 0,
 			"no-unused-vars": [
-				2, {
+				2,
+				{
 					"varsIgnorePattern": "^h$"
 				}
 			]
@@ -57,4 +59,3 @@
 		}
 	}
 }
-

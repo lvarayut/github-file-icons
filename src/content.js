@@ -1,4 +1,5 @@
 import injectGithub from './injections/github';
+import injectOctotree from './injections/octotree';
 
 function init() {
   const observer = new MutationObserver(mutations => {
@@ -8,6 +9,9 @@ function init() {
         const target = mutation.target;
         if ($(target).has('.js-navigation-item')) {
           injectGithub(target);
+        }
+        if ($(target).has('.blob')) {
+          injectOctotree(target);
         }
       }
     }

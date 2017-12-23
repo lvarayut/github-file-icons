@@ -20,12 +20,16 @@
 			"https://github.com/*"
 		],
 		"css": [
+      "vendors/file-icons-js/css/style.css",
 			"content.css"
 		],
 		"js": [
-			"jquery.slim.min.js",
+			"vendors/jquery.slim.min.js",
 			"content.js"
 		]
-	}]
+	}],
+  "web_accessible_resources": [
+    "vendors/file-icons-js/fonts/*"
+  ]
 }
 

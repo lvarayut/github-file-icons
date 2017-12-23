@@ -19,8 +19,14 @@ module.exports = {
 		}, {
 			from: 'icons/',
 			to: 'icons/'
-		},{
-			from: 'node_modules/jquery/dist/jquery.slim.min.js'
+    }, {
+      from: 'vendors/**',
+    }, {
+      from: 'node_modules/file-icons-js/fonts/',
+      to: 'vendors/file-icons-js/fonts/'
+    }, {
+			from: 'node_modules/jquery/dist/jquery.slim.min.js',
+      to: 'vendors/jquery.slim.min.js'
 		}])
 	],
 	module: {

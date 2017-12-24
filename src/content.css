@@ -1,0 +1,10 @@
+td.icon > svg.octicon-file-text,
+.octotree_treeview .jstree-icon.blob::before {
+  display: none;
+}
+
+.octotree_github_sidebar .octotree_views .octotree_treeview .jstree-icon {
+  font-style: normal;
+  margin-top: 0 !important;
+}
+

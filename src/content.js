@@ -7,10 +7,10 @@ function init() {
       const mutation = mutations[i];
       if (mutation.type === 'childList') {
         const target = mutation.target;
-        if ($(target).has('.js-navigation-item')) {
+        if ($(target).has('.js-navigation-item > .icon').length) {
           injectGithub(target);
         }
-        if ($(target).has('.blob')) {
+        if ($(target).has('.blob').length) {
           injectOctotree(target);
         }
       }

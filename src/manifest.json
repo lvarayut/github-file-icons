@@ -5,10 +5,11 @@
 	"description": "Github file icons",
 	"homepage_url": "https://github.com/lvarayut/github-file-icons",
 	"icons": {
-		"16": "icons/icon16.png",
-		"48": "icons/icon48.png",
-		"128": "icons/icon128.png"
+		"128": "icons/icon.png"
 	},
+  "browser_action": {
+    "default_icon": "icons/icon-browser.png"
+  },
 	"author": "Varayut Lerdkanlayanawat",
 	"permissions": [
 		"http://github.com/*",

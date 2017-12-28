@@ -1,8 +1,8 @@
 {
-	"name": "Github - File Icons",
+	"name": "Github File Icons",
 	"version": "1.0.0",
 	"manifest_version": 2,
-	"description": "Github file icons",
+	"description": "Display file icons on Github",
 	"homepage_url": "https://github.com/lvarayut/github-file-icons",
 	"icons": {
 		"128": "icons/icon.png"

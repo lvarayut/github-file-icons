@@ -3,7 +3,7 @@
 		"test": "xo && BABEL_ENV=testing ava && run-s build",
 		"build": "webpack",
 		"watch": "webpack --watch",
-		"update-version": "VERSION=$(date -u +%y.%-m.%-d.%-H%M); echo $VERSION; dot-json dist/manifest.json version $VERSION",
+		"update-version": "dot-json dist/manifest.json version $TRAVIS_TAG",
 		"release:cws": "cd dist && webstore upload --auto-publish",
 		"release": "run-s build update-version release:*"
 	},

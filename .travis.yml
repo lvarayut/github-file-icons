@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - 'node'
+env:
+  - EXTENSION_ID=kkokonbjllgdmblmbichgkkikhlcnekp
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: yarn run release
+    on:
+      tags: true

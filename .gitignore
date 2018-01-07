@@ -29,5 +29,4 @@ Icon
 # App files
 # --------------------
 node_modules
-yarn.lock
 dist

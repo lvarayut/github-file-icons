@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"test": "xo && BABEL_ENV=testing ava && run-s build",
+		"test": "run-s build",
 		"build": "webpack",
 		"watch": "webpack --watch",
 		"update-version": "dot-json dist/manifest.json version $TRAVIS_TAG",

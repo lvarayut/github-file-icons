@@ -101,33 +101,33 @@
 	font-family: FontAwesome;
 	font-weight: normal;
 	font-style: normal;
-	src: url("chrome-extension://einnofmnamjbdcbahceidjonfkibljnh/vendors/file-icons-js/fonts/fontawesome.woff2");
+	src: url("chrome-extension://kkokonbjllgdmblmbichgkkikhlcnekp/vendors/file-icons-js/fonts/fontawesome.woff2");
 }
 
 @font-face {
 	font-family: Mfizz;
-	src: url("chrome-extension://einnofmnamjbdcbahceidjonfkibljnh/vendors/file-icons-js/fonts/mfixx.woff2");
+	src: url("chrome-extension://kkokonbjllgdmblmbichgkkikhlcnekp/vendors/file-icons-js/fonts/mfixx.woff2");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: Devicons;
-	src: url("chrome-extension://einnofmnamjbdcbahceidjonfkibljnh/vendors/file-icons-js/fonts/devopicons.woff2");
+	src: url("chrome-extension://kkokonbjllgdmblmbichgkkikhlcnekp/vendors/file-icons-js/fonts/devopicons.woff2");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: file-icons;
-	src: url("chrome-extension://einnofmnamjbdcbahceidjonfkibljnh/vendors/file-icons-js/fonts/file-icons.woff2");
+	src: url("chrome-extension://kkokonbjllgdmblmbichgkkikhlcnekp/vendors/file-icons-js/fonts/file-icons.woff2");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: octicons;
-	src: url("chrome-extension://einnofmnamjbdcbahceidjonfkibljnh/vendors/file-icons-js/fonts/octicons.woff2");
+	src: url("chrome-extension://kkokonbjllgdmblmbichgkkikhlcnekp/vendors/file-icons-js/fonts/octicons.woff2");
 	font-weight: normal;
 	font-style: normal;
 }

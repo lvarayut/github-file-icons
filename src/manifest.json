@@ -1,6 +1,6 @@
 {
 	"name": "Github File Icons",
-	"version": "1.0.0",
+	"version": "1.1.2",
 	"manifest_version": 2,
 	"description": "Display file icons on Github",
 	"homepage_url": "https://github.com/lvarayut/github-file-icons",
@@ -12,13 +12,24 @@
   },
 	"author": "Varayut Lerdkanlayanawat",
 	"permissions": [
+    "contextMenus",
+    "activeTab",
 		"http://github.com/*",
 		"https://github.com/*"
 	],
+	"optional_permissions": [
+		"http://*/*",
+		"https://*/*"
+	],
+  "background": {
+    "scripts": [
+      "bg.js"
+    ]
+  },
 	"content_scripts": [{
 		"matches": [
-			"http://github.com/*",
-			"https://github.com/*"
+      "http://github.com/*",
+      "https://github.com/*"
 		],
 		"css": [
       "vendors/file-icons-js/css/style.css",

@@ -9,7 +9,8 @@
 	},
 	"dependencies": {
 		"file-icons-js": "websemantics/file-icons-js",
-		"jquery": "^3.2.1"
+		"jquery": "^3.2.1",
+		"webext-dynamic-content-scripts": "5.0.1"
 	},
 	"devDependencies": {
 		"ava": "*",

@@ -1,3 +1,7 @@
+.gfi {
+  color: rgba(3,47,98,0.55);
+}
+
 td.icon > svg.octicon-file,
 .octotree_treeview .jstree-icon.blob::before {
   display: none;

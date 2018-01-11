@@ -1,4 +1,4 @@
-td.icon > svg.octicon-file-text,
+td.icon > svg.octicon-file,
 .octotree_treeview .jstree-icon.blob::before {
   display: none;
 }

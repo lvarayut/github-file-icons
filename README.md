@@ -6,7 +6,8 @@
 
 - Beautiful file icons ported from [Atom](https://github.com/file-icons/atom)
 - Perfect combination with [Octotree](https://github.com/buunguyen/octotree) extension
-- Support Github Enterprise, just access your Github Enterprise and right click on the extension icon, and choose `Enable Github Enterprise`
+- Support Github Enterprise (Access your Github Enterprise, right click on the extension icon, and choose `Enable Github Enterprise`)
+- Support both color and dark icons (Right click on the extension icon, and choose `Change icons color`)
 
 ![Demo](https://user-images.githubusercontent.com/4281887/34644898-60a7f9a4-f340-11e7-8a90-d94243a764d7.gif)
 

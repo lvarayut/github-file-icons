@@ -6,11 +6,12 @@ export default function injectIconsGithub(target) {
     const $items = $('.js-navigation-item', target);
     $items.each((index, item) => {
       const $item = $(item);
-      const isFile = $item.find('.octicon-file').length > 0;
+      const isFile = $item.find('.octicon-file').length > 0
+      const isSvg = $item.find('.octicon-file-text').length > 0;
       const name = $item.find('.js-navigation-open').text();
       const $icon = $item.find('.icon');
 
-      if (isFile) {
+      if (isFile || isSvg) {
           let className;
           if (isColor) {
             className = fileIcons.getClassWithColor(name) || DEFAULT_ICON;
@@ -18,6 +19,10 @@ export default function injectIconsGithub(target) {
             className = fileIcons.getClass(name) || DEFAULT_ICON;
           }
           $icon.addClass(`gfi ${className}`);
+
+          if (isSvg) {
+            $item.find('svg').remove()
+          }
       }
     });
   });

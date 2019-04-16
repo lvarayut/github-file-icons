@@ -1,11 +1,11 @@
 # <img src="./icons/original/icon.png" width="45" align="left"> Github File Icons [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/kkokonbjllgdmblmbichgkkikhlcnekp.svg)](https://chrome.google.com/webstore/detail/github-file-icons/kkokonbjllgdmblmbichgkkikhlcnekp)
 
-> Chrome extension for displaying file icons on Github. 
+> Chrome extension for displaying file icons on Github.
 
 ## Highlights
 
 - Beautiful file icons ported from [Atom](https://github.com/file-icons/atom)
-- Perfect combination with [Octotree](https://github.com/buunguyen/octotree) extension
+- Perfect combination with [Octotree](https://github.com/ovity/octotree) extension
 - Support Github Enterprise (Access your Github Enterprise, right click on the extension icon, and choose `Enable Github Enterprise`)
 - Support both color and dark icons (Right click on the extension icon, and choose `Change icons color`)
 

@@ -2,13 +2,6 @@
   color: rgba(3,47,98,0.55);
 }
 
-td.icon > svg.octicon-file,
-.octotree_treeview .jstree-icon.blob::before {
+td.icon > svg.octicon-file {
   display: none;
 }
-
-.octotree_github_sidebar .octotree_views .octotree_treeview .jstree-icon {
-  font-style: normal;
-  margin-top: 0 !important;
-}
-

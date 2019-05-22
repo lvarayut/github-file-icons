@@ -2,6 +2,7 @@
   color: rgba(3,47,98,0.55);
 }
 
-td.icon > svg.octicon-file {
+td.icon > svg.octicon-file, .rgh-edit-files-faster {
   display: none;
 }
+

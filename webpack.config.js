@@ -12,7 +12,6 @@ module.exports = {
 		filename: '[name].js'
 	},
 	plugins: [
-		new webpack.optimize.ModuleConcatenationPlugin(),
 		new CopyWebpackPlugin([{
 			from: '*',
 			context: 'src',
@@ -29,15 +28,6 @@ module.exports = {
 			from: 'node_modules/jquery/dist/jquery.slim.min.js',
       to: 'vendors/jquery.slim.min.js'
 		}])
-	],
-	module: {
-		rules: [{
-			test: /\.js$/,
-			exclude: /node_modules/,
-			use: {
-				loader: 'babel-loader'
-			}
-		}]
-	}
+	]
 };
 

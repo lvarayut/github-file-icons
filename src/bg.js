@@ -1,8 +1,7 @@
 /* global chrome */
-import DCS from 'webext-dynamic-content-scripts';
+import 'webext-dynamic-content-scripts';
 
 function init() {
-  DCS.addToFutureTabs();
   chrome.contextMenus.create({
     title: "Enable Github Enterprise",
     contexts: ["browser_action"],

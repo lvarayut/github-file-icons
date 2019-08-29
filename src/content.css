@@ -6,3 +6,6 @@ td.icon > svg.octicon-file, .rgh-edit-files-faster {
   display: none;
 }
 
+table.files td.icon {
+  width: 28px!important;
+}

@@ -9,3 +9,17 @@ td.icon > svg.octicon-file, .rgh-edit-files-faster {
 table.files td.icon {
   width: 28px!important;
 }
+
+.gfi-release {
+  color: #586069;
+  text-decoration: none!important;
+}
+.gfi-release svg {
+  display: none;
+}
+.gfi-release span {
+ color: #0366d6;
+}
+.gfi-release:hover span {
+  text-decoration: underline;
+}

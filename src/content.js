@@ -7,7 +7,10 @@ function init() {
       if (mutation.type === 'childList') {
         const target = mutation.target;
         if ($(target).has('.js-navigation-item > .icon').length) {
-          injectGithub(target);
+          injectGithub.explorer(target);
+        }
+        else if ($(target).has('.release-main-section .Box-body > a.d-flex').length) {
+          injectGithub.releases(target);
         }
       }
     }

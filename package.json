@@ -19,6 +19,7 @@
 		"dot-json": "^1.0.3",
 		"esm": "^3.2.25",
 		"npm-run-all": "^4.1.1",
+		"replace-in-file-webpack-plugin": "^1.0.6",
 		"webpack": "^4.39.1",
 		"webpack-cli": "^3.3.6",
 		"xo": "*"

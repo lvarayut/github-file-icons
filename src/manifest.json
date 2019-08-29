@@ -7,14 +7,14 @@
 	"icons": {
 		"128": "icons/icon.png"
 	},
-  "browser_action": {
-    "default_icon": "icons/icon-browser.png"
-  },
+	"browser_action": {
+		"default_icon": "icons/icon-browser.png"
+	},
 	"author": "Varayut Lerdkanlayanawat",
 	"permissions": [
-    "contextMenus",
-    "activeTab",
-    "storage",
+		"contextMenus",
+		"activeTab",
+		"storage",
 		"http://github.com/*",
 		"https://github.com/*"
 	],
@@ -22,27 +22,28 @@
 		"http://*/*",
 		"https://*/*"
 	],
-  "background": {
-    "scripts": [
-      "bg.js"
-    ]
-  },
-	"content_scripts": [{
-		"matches": [
-      "http://github.com/*",
-      "https://github.com/*"
-		],
-		"css": [
-      "vendors/file-icons-js/css/style.css",
-			"content.css"
-		],
-		"js": [
-			"vendors/jquery.slim.min.js",
-			"content.js"
+	"background": {
+		"scripts": [
+			"bg.js"
 		]
-	}],
-  "web_accessible_resources": [
-    "vendors/file-icons-js/fonts/*"
-  ]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"http://github.com/*",
+				"https://github.com/*"
+			],
+			"css": [
+				"vendors/file-icons-js/css/style.css",
+				"content.css"
+			],
+			"js": [
+				"vendors/jquery.slim.min.js",
+				"content.js"
+			]
+		}
+	],
+	"web_accessible_resources": [
+		"vendors/file-icons-js/fonts/*"
+	]
 }
-

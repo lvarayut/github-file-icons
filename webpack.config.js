@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+  devtool: 'cheap-module-source-map',
   entry: {
     content: './src/content',
     bg: './src/bg'

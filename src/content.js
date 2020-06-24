@@ -1,12 +1,14 @@
 import injectGithub from './injections/github';
 
 function init() {
-  const observer = new MutationObserver(mutations => {
+  const observer = new MutationObserver((mutations) => {
     for (let i = 0; i < mutations.length; i++) {
       const mutation = mutations[i];
+
       if (mutation.type === 'childList') {
         const target = mutation.target;
-        if ($(target).has('.js-navigation-item > .icon').length) {
+
+        if ($(target).has(`.Box-row`).length) {
           injectGithub(target);
         }
       }
@@ -18,6 +20,8 @@ function init() {
     characterData: true,
     subtree: true
   });
+
+  injectGithub('body');
 }
 
 document.addEventListener('pjax:end', init);

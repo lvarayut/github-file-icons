@@ -6,25 +6,20 @@ export default function injectIconsGithub(target) {
     const $items = $('.js-navigation-item', target);
     $items.each((index, item) => {
       const $item = $(item);
-      const isFile = $item.find('.octicon-file').length > 0
-      const isSvg = $item.find('.octicon-file-text').length > 0;
+      const isFile = $item.find('.octicon-file').length > 0;
       const name = $item.find('.js-navigation-open').text();
-      const $icon = $item.find('.icon');
+      const $icon = $item.find('> :first-child');
 
-      if (isFile || isSvg) {
-          let className;
-          if (isColor) {
-            className = fileIcons.getClassWithColor(name) || DEFAULT_ICON;
-          } else {
-            className = fileIcons.getClass(name) || DEFAULT_ICON;
-          }
-          $icon.addClass(`gfi ${className}`);
+      if (isFile) {
+        let className = fileIcons.getClass(name) || DEFAULT_ICON;
 
-          if (isSvg) {
-            $item.find('svg').remove()
-          }
+        if (isColor) {
+          className = fileIcons.getClassWithColor(name) || DEFAULT_ICON;
+        }
+
+        $icon.addClass(`gfi ${className}`);
+        $item.find('svg').remove();
       }
     });
   });
 }
-

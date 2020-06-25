@@ -1,48 +1,33 @@
 {
-	"name": "Github File Icons",
-	"version": "1.2.4",
-	"manifest_version": 2,
-	"description": "Display file icons on Github",
-	"homepage_url": "https://github.com/lvarayut/github-file-icons",
-	"icons": {
-		"128": "icons/icon.png"
-	},
+  "name": "Github File Icons",
+  "version": "1.2.5",
+  "manifest_version": 2,
+  "description": "Display file icons on Github",
+  "homepage_url": "https://github.com/lvarayut/github-file-icons",
+  "icons": {
+    "128": "icons/icon.png"
+  },
   "browser_action": {
     "default_icon": "icons/icon-browser.png"
   },
-	"author": "Varayut Lerdkanlayanawat",
-	"permissions": [
+  "author": "Varayut Lerdkanlayanawat",
+  "permissions": [
     "contextMenus",
     "activeTab",
     "storage",
-		"http://github.com/*",
-		"https://github.com/*"
-	],
-	"optional_permissions": [
-		"http://*/*",
-		"https://*/*"
-	],
+    "http://github.com/*",
+    "https://github.com/*"
+  ],
+  "optional_permissions": ["http://*/*", "https://*/*"],
   "background": {
-    "scripts": [
-      "bg.js"
-    ]
+    "scripts": ["bg.js"]
   },
-	"content_scripts": [{
-		"matches": [
-      "http://github.com/*",
-      "https://github.com/*"
-		],
-		"css": [
-      "vendors/file-icons-js/css/style.css",
-			"content.css"
-		],
-		"js": [
-			"vendors/jquery.slim.min.js",
-			"content.js"
-		]
-	}],
-  "web_accessible_resources": [
-    "vendors/file-icons-js/fonts/*"
-  ]
+  "content_scripts": [
+    {
+      "matches": ["http://github.com/*", "https://github.com/*"],
+      "css": ["vendors/file-icons-js/css/style.css", "content.css"],
+      "js": ["vendors/jquery.slim.min.js", "content.js"]
+    }
+  ],
+  "web_accessible_resources": ["vendors/file-icons-js/fonts/*"]
 }
-

@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "file-icons-js": "websemantics/file-icons-js",
-    "jquery": "^3.5.1",
+    "selector-observer": "^2.1.6",
     "webext-dynamic-content-scripts": "^6.0.4"
   },
   "devDependencies": {
@@ -25,17 +25,10 @@
   },
   "xo": {
     "envs": [
-      "browser",
-      "jquery"
+      "browser"
     ],
     "rules": {
-      "import/no-unassigned-import": 0,
-      "no-unused-vars": [
-        2,
-        {
-          "varsIgnorePattern": "^h$"
-        }
-      ]
+      "import/no-unassigned-import": 0
     },
     "globals": [
       "browser"

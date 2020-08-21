@@ -1,7 +1,7 @@
 import fileIcons from 'file-icons-js';
 import { DEFAULT_ICON } from '../constants';
 
-export default function injectIconsGithub(target) {
+export default function injectIconsGitHub(target) {
   chrome.storage.sync.get('isColor', ({ isColor }) => {
     const $items = $('.js-navigation-item', target);
     $items.each((index, item) => {

@@ -1,4 +1,4 @@
-import injectGithub from './injections/github';
+import injectGitHub from './injections/github';
 
 function init() {
   const observer = new MutationObserver((mutations) => {
@@ -9,7 +9,7 @@ function init() {
         const target = mutation.target;
 
         if ($(target).has(`.Box-row`).length) {
-          injectGithub(target);
+          injectGitHub(target);
         }
       }
     }
@@ -21,7 +21,7 @@ function init() {
     subtree: true
   });
 
-  injectGithub('body');
+  injectGitHub('body');
 }
 
 document.addEventListener('pjax:end', init);

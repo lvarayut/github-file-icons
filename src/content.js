@@ -16,7 +16,7 @@ chrome.storage.sync.get('isColor', ({ isColor }) => {
         className = fileIcons.getClassWithColor(name) || DEFAULT_ICON;
       }
 
-      icon.classList.add('octicon-file', 'gfi', className);
+      icon.classList.add('octicon-file', 'gfi', ...className.split(' '));
       item.querySelector('svg').replaceWith(icon);
     }
   }

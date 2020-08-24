@@ -3,7 +3,7 @@ import 'webext-dynamic-content-scripts';
 
 function init() {
   chrome.contextMenus.create({
-    title: "Enable Github Enterprise",
+    title: "Enable GitHub Enterprise",
     contexts: ["browser_action"],
     onclick: () => {
       chrome.tabs.query({

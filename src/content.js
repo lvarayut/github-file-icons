@@ -1,4 +1,3 @@
-
 import { observe } from 'selector-observer';
 import fileIcons from 'file-icons-js';
 import { DEFAULT_ICON } from './constants';

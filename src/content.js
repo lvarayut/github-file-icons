@@ -21,8 +21,6 @@ chrome.storage.sync.get('isColor', ({ isColor }) => {
   }
 
   observe('.js-navigation-container > .js-navigation-item', {
-    add(element) {
-      injectGithub(element);
-    }
+    add: injectGithub
   });
 });

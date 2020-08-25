@@ -3,7 +3,3 @@
   display: inline-block;
   vertical-align: top;
 }
-
-td.icon > svg.octicon-file, .rgh-edit-files-faster {
-  display: none;
-}

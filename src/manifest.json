@@ -26,7 +26,7 @@
     {
       "matches": ["http://github.com/*", "https://github.com/*"],
       "css": ["vendors/file-icons-js/css/style.css", "content.css"],
-      "js": ["vendors/jquery.slim.min.js", "content.js"]
+      "js": ["content.js"]
     }
   ],
   "web_accessible_resources": ["vendors/file-icons-js/fonts/*"]

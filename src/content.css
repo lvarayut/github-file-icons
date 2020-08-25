@@ -1,8 +1,5 @@
 .gfi {
   color: rgba(3,47,98,0.55);
+  display: inline-block;
+  vertical-align: top;
 }
-
-td.icon > svg.octicon-file, .rgh-edit-files-faster {
-  display: none;
-}
-

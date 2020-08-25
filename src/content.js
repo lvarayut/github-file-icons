@@ -1,28 +1,26 @@
-import injectGitHub from './injections/github';
+import { observe } from 'selector-observer';
+import fileIcons from 'file-icons-js';
+import { DEFAULT_ICON } from './constants';
 
-function init() {
-  const observer = new MutationObserver((mutations) => {
-    for (let i = 0; i < mutations.length; i++) {
-      const mutation = mutations[i];
+chrome.storage.sync.get('isColor', ({ isColor }) => {
+  function injectGithub(item) {
+    const isFile = item.querySelector('.octicon-file');
+    const name = item.querySelector('.js-navigation-open').textContent;
+    const icon = document.createElement('span');
 
-      if (mutation.type === 'childList') {
-        const target = mutation.target;
+    if (isFile) {
+      let className = fileIcons.getClass(name) || DEFAULT_ICON;
 
-        if ($(target).has(`.Box-row`).length) {
-          injectGitHub(target);
-        }
+      if (isColor) {
+        className = fileIcons.getClassWithColor(name) || DEFAULT_ICON;
       }
+
+      icon.classList.add('octicon-file', 'gfi', ...className.split(' '));
+      item.querySelector('svg').replaceWith(icon);
     }
-  });
-  observer.observe(document.body, {
-    attributes: true,
-    childList: true,
-    characterData: true,
-    subtree: true
-  });
+  }
 
-  injectGitHub('body');
-}
-
-document.addEventListener('pjax:end', init);
-init();
+  observe('.js-navigation-container > .js-navigation-item', {
+    add: injectGithub
+  });
+});
